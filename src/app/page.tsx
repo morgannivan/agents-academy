@@ -8,6 +8,7 @@ import {
   Zap,
 } from "lucide-react";
 import HeroInput from "@/components/hero-input";
+import SignInButton from "@/components/auth/SignInButton";
 
 /* ------------------------------------------------------------------ */
 /*  Data                                                               */
@@ -166,12 +167,7 @@ export default function Home() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="#sign-in"
-              className="rounded-xl bg-emerald-500 px-4 py-2 text-sm font-medium text-zinc-950 transition-colors hover:bg-emerald-400"
-            >
-              Sign In
-            </Link>
+            <SignInButton />
           </div>
 
           {/* Mobile nav fallback */}
@@ -182,12 +178,7 @@ export default function Home() {
             >
               Build
             </Link>
-            <Link
-              href="#sign-in"
-              className="rounded-xl bg-emerald-500 px-3 py-2 text-sm font-medium text-zinc-950"
-            >
-              Sign In
-            </Link>
+            <SignInButton />
           </div>
         </nav>
       </header>
@@ -380,13 +371,7 @@ export default function Home() {
                   {link.label}
                 </Link>
               ))}
-              <Link
-                id="sign-in"
-                href="#build"
-                className="text-sm font-medium text-emerald-500 transition-colors hover:text-emerald-400"
-              >
-                Sign In
-              </Link>
+              <SignInButton />
             </div>
           </div>
 
