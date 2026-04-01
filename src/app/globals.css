@@ -34,3 +34,7 @@ body {
 .animate-blink {
   animation: blink 1s step-end infinite;
 }
+
+@keyframes flow {
+  to { stroke-dashoffset: -20; }
+}
