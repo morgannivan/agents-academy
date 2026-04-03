@@ -15,31 +15,37 @@ import SignInButton from "@/components/auth/SignInButton";
 /* ------------------------------------------------------------------ */
 
 const NAV_LINKS = [
-  { label: "Build", href: "#build" },
-  { label: "Marketplace", href: "#marketplace" },
-  { label: "Train", href: "#train" },
-  { label: "Certify", href: "#certify" },
-  { label: "Courses", href: "#courses" },
+  { label: "Enroll", href: "/build" },
+  { label: "Training", href: "/train" },
+  { label: "Standards", href: "/standards" },
+  { label: "Marketplace", href: "/marketplace" },
+  { label: "Integrations", href: "/integrations" },
 ];
 
 const STEPS = [
   {
     step: "01",
-    title: "Import or Build",
+    title: "Enroll",
     description:
-      "Bring agents from CrewAI, LangChain, OpenClaw, or GPT Store — or build from domain-specific templates with standards baked in.",
+      "Bring your agent from any framework \u2014 CrewAI, LangChain, OpenClaw, GPT Store \u2014 or build one from a domain template. Enrollment assigns a curriculum based on the agent\u2019s target domain.",
   },
   {
     step: "02",
-    title: "Train & Certify",
+    title: "Train",
     description:
-      "Run agents through domain-specific training katas. Evaluate against codified standards. Certify with Outcome Guarantee Contracts.",
+      "AI instructor agents run your agent through domain-specific katas, score its responses against codified standards, diagnose weaknesses, and prescribe remediation. Agents training agents.",
   },
   {
     step: "03",
-    title: "Deploy & Monitor",
+    title: "Certify",
     description:
-      "Ship certified agents to any channel. Monitor production behavior. Auto-retrain when drift is detected.",
+      "Agents that pass their training earn verifiable credentials with Outcome Guarantee Contracts \u2014 quantified proof of capability, not just a benchmark score.",
+  },
+  {
+    step: "04",
+    title: "Graduate & Deploy",
+    description:
+      "Certified agents graduate to the marketplace or deploy directly to Slack, API, SMS, or web. Production monitoring detects drift and triggers re-enrollment.",
   },
 ];
 
@@ -115,28 +121,28 @@ const STATS = [
 
 const VALUE_PROPS = [
   {
-    icon: Zap,
-    title: "Beyond Eval",
+    icon: Bot,
+    title: "Agents Training Agents",
     description:
-      "Eval platforms give you a score. We train, certify, deploy, monitor, and retrain — the full agent lifecycle.",
+      "AI instructor agents run the curriculum. Judge agents score. Coach agents diagnose weaknesses. The training system itself is agentic.",
   },
   {
     icon: ShieldCheck,
-    title: "Domain Standards",
+    title: "Standards, Not Vibes",
     description:
-      "Codified best practices for Healthcare, Finance, Legal, Real Estate, and DevOps. Agents are certified against specific requirements.",
+      "17 codified domain standards across Healthcare, Finance, Legal, Real Estate, and DevOps. Agents are certified against specific, versioned requirements.",
   },
   {
     icon: Lock,
-    title: "Outcome Guarantees",
+    title: "Graduates, Not Listings",
     description:
-      "Every certified agent comes with quantified performance guarantees backed by statistical evidence from training runs.",
+      "Every certified agent has a verifiable training transcript and Outcome Guarantee Contract. You can audit exactly how it was trained.",
   },
   {
     icon: Users,
-    title: "Platform Agnostic",
+    title: "Any Framework, Any Channel",
     description:
-      "Import from CrewAI, LangChain, OpenClaw, or GPT Store. Deploy to any channel. Not locked to any ecosystem.",
+      "Enroll agents from CrewAI, LangChain, OpenClaw, or GPT Store. Graduate them to Slack, API, SMS, web, or the marketplace.",
   },
 ];
 
@@ -194,18 +200,19 @@ export default function Home() {
           <div className="relative mx-auto max-w-5xl px-6 pb-24 pt-24 text-center sm:pb-28 sm:pt-32">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/80 px-4 py-2 text-sm text-zinc-400">
               <Bot className="h-4 w-4 text-emerald-500" />
-              The certification layer for the agent economy
+              Where agents train agents
             </div>
 
             <h1 className="mx-auto max-w-4xl text-4xl font-semibold tracking-tight text-zinc-50 sm:text-5xl lg:text-6xl">
-              Certified, domain-specific AI agents{" "}
-              <span className="text-emerald-500">trained to standards</span>
+              The academy that produces{" "}
+              <span className="text-emerald-500">elite AI agents</span>
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-zinc-400">
-              agents.academy trains agents against codified domain standards,
-              certifies their capabilities with evidence, and deploys them with
-              outcome guarantees. From eval to production.
+              AI instructor agents train your agents against domain-specific
+              standards, certify their capabilities with verifiable evidence,
+              and deploy them as certified operatives. Not a marketplace.
+              A school.
             </p>
 
             <div className="mt-10">
@@ -222,14 +229,14 @@ export default function Home() {
           <div className="mx-auto max-w-5xl px-6 py-24">
             <div className="text-center">
               <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-500">
-                How It Works
+                The Training Pipeline
               </p>
               <h2 className="mt-3 text-3xl font-semibold text-zinc-50 sm:text-4xl">
-                Import. Train. Certify. Deploy.
+                Enroll. Train. Certify. Graduate.
               </h2>
             </div>
 
-            <div className="mt-14 grid gap-6 md:grid-cols-3">
+            <div className="mt-14 grid gap-6 md:grid-cols-4">
               {STEPS.map((step) => (
                 <div
                   key={step.step}
@@ -258,14 +265,15 @@ export default function Home() {
           <div className="mx-auto max-w-7xl px-6 py-24">
             <div className="mx-auto max-w-2xl text-center">
               <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-500">
-                Domain Templates
+                Specialization Tracks
               </p>
               <h2 className="mt-3 text-3xl font-semibold text-zinc-50 sm:text-4xl">
-                Agents for every high-value workflow
+                Domain-specific training programs
               </h2>
               <p className="mt-4 text-zinc-400">
-                Start from a domain-specific template, then tailor knowledge,
-                integrations, and policies to your team.
+                Each domain has codified standards, training katas, and
+                certification criteria. Agents specialize like operatives
+                training for a specific mission.
               </p>
             </div>
 
@@ -283,10 +291,10 @@ export default function Home() {
                     {domain.description}
                   </p>
                   <Link
-                    href="#build"
+                    href="/build"
                     className="mt-5 inline-flex items-center gap-1 text-sm font-medium text-emerald-500 transition-colors hover:text-emerald-400"
                   >
-                    Build Now
+                    Enroll Agent
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                 </div>
@@ -317,7 +325,7 @@ export default function Home() {
                 Why agents.academy
               </p>
               <h2 className="mt-3 text-3xl font-semibold text-zinc-50 sm:text-4xl">
-                The trust layer the agent economy is missing
+                Every marketplace is a shelf. We are the school.
               </h2>
             </div>
 
