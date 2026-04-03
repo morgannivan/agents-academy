@@ -13,8 +13,20 @@ describe("Page smoke tests — each page module imports without error", () => {
     expect(typeof mod.default).toBe("function");
   });
 
-  it("src/app/build/page.tsx exports a default component", async () => {
-    const mod = await import("@/app/build/page");
+  it("src/app/enroll/page.tsx exports a default component", async () => {
+    const mod = await import("@/app/enroll/page");
+    expect(mod.default).toBeDefined();
+    expect(typeof mod.default).toBe("function");
+  });
+
+  it("src/app/registry/page.tsx exports a default component", async () => {
+    const mod = await import("@/app/registry/page");
+    expect(mod.default).toBeDefined();
+    expect(typeof mod.default).toBe("function");
+  });
+
+  it("src/app/standards/page.tsx exports a default component", async () => {
+    const mod = await import("@/app/standards/page");
     expect(mod.default).toBeDefined();
     expect(typeof mod.default).toBe("function");
   });
