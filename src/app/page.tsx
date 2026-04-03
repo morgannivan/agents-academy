@@ -25,21 +25,21 @@ const NAV_LINKS = [
 const STEPS = [
   {
     step: "01",
-    title: "Describe",
+    title: "Import or Build",
     description:
-      "Tell us what your agent should do in plain English. Define its role, knowledge domain, and compliance requirements.",
+      "Bring agents from CrewAI, LangChain, OpenClaw, or GPT Store — or build from domain-specific templates with standards baked in.",
   },
   {
     step: "02",
-    title: "Train",
+    title: "Train & Certify",
     description:
-      "Upload documents, connect APIs, and run simulations. Your agent learns your workflows, guardrails, and brand voice in minutes.",
+      "Run agents through domain-specific training katas. Evaluate against codified standards. Certify with Outcome Guarantee Contracts.",
   },
   {
     step: "03",
-    title: "Deploy",
+    title: "Deploy & Monitor",
     description:
-      "Ship to web, Slack, internal tools, or API endpoints with monitoring, permissions, and compliance baked in.",
+      "Ship certified agents to any channel. Monitor production behavior. Auto-retrain when drift is detected.",
   },
 ];
 
@@ -107,36 +107,36 @@ const DOMAINS = [
 ];
 
 const STATS = [
-  { value: "10k+", label: "Agents Deployed" },
-  { value: "50+", label: "Industry Domains" },
-  { value: "99.9%", label: "Uptime SLA" },
-  { value: "<2 min", label: "Avg. Build Time" },
+  { value: "17", label: "Domain Standards" },
+  { value: "5", label: "Industry Packs" },
+  { value: "200+", label: "Training Katas" },
+  { value: "3", label: "Certification Tiers" },
 ];
 
 const VALUE_PROPS = [
   {
     icon: Zap,
-    title: "Ship in Minutes",
+    title: "Beyond Eval",
     description:
-      "Generate a working agent fast, then iterate with real domain context instead of boilerplate scaffolding.",
+      "Eval platforms give you a score. We train, certify, deploy, monitor, and retrain — the full agent lifecycle.",
   },
   {
     icon: ShieldCheck,
-    title: "Compliance Built In",
+    title: "Domain Standards",
     description:
-      "Start with enterprise-ready policies for HIPAA, GDPR, SOC 2, and internal review processes.",
+      "Codified best practices for Healthcare, Finance, Legal, Real Estate, and DevOps. Agents are certified against specific requirements.",
   },
   {
     icon: Lock,
-    title: "Enterprise Security",
+    title: "Outcome Guarantees",
     description:
-      "Role-based access, audit trails, secure integrations, and encrypted data flows come standard.",
+      "Every certified agent comes with quantified performance guarantees backed by statistical evidence from training runs.",
   },
   {
     icon: Users,
-    title: "Train as a Team",
+    title: "Platform Agnostic",
     description:
-      "Collaborate on prompts, datasets, evaluations, and deployment approvals across your org.",
+      "Import from CrewAI, LangChain, OpenClaw, or GPT Store. Deploy to any channel. Not locked to any ecosystem.",
   },
 ];
 
@@ -194,18 +194,18 @@ export default function Home() {
           <div className="relative mx-auto max-w-5xl px-6 pb-24 pt-24 text-center sm:pb-28 sm:pt-32">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/80 px-4 py-2 text-sm text-zinc-400">
               <Bot className="h-4 w-4 text-emerald-500" />
-              Lovable, but for AI agents
+              The certification layer for the agent economy
             </div>
 
             <h1 className="mx-auto max-w-4xl text-4xl font-semibold tracking-tight text-zinc-50 sm:text-5xl lg:text-6xl">
-              Build AI agents your team can{" "}
-              <span className="text-emerald-500">train, trust, and deploy</span>
+              Certified, domain-specific AI agents{" "}
+              <span className="text-emerald-500">trained to standards</span>
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-zinc-400">
-              agents.academy turns a plain-English description into a
-              production-ready agent with workflows, guardrails, and deployment
-              paths built in.
+              agents.academy trains agents against codified domain standards,
+              certifies their capabilities with evidence, and deploys them with
+              outcome guarantees. From eval to production.
             </p>
 
             <div className="mt-10">
@@ -225,7 +225,7 @@ export default function Home() {
                 How It Works
               </p>
               <h2 className="mt-3 text-3xl font-semibold text-zinc-50 sm:text-4xl">
-                Describe. Train. Deploy.
+                Import. Train. Certify. Deploy.
               </h2>
             </div>
 
@@ -314,10 +314,10 @@ export default function Home() {
           <div className="mx-auto max-w-6xl px-6 py-24">
             <div className="mx-auto max-w-2xl text-center">
               <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-500">
-                Why teams choose us
+                Why agents.academy
               </p>
               <h2 className="mt-3 text-3xl font-semibold text-zinc-50 sm:text-4xl">
-                The fastest path from prototype to production
+                The trust layer the agent economy is missing
               </h2>
             </div>
 
