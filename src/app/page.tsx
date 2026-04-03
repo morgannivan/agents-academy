@@ -18,8 +18,8 @@ const NAV_LINKS = [
   { label: "Enroll", href: "/build" },
   { label: "Training", href: "/train" },
   { label: "Standards", href: "/standards" },
-  { label: "Marketplace", href: "/marketplace" },
-  { label: "Integrations", href: "/integrations" },
+  { label: "Certify", href: "/certify" },
+  { label: "Courses", href: "/courses" },
 ];
 
 const STEPS = [
